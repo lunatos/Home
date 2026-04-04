@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/Image';
 function IntroSection() {
     return (
         <>
-            <div className="brain-background"></div>
+            <div className="code-background"></div>
             <div className="back-color">
                 <Container className="bio-container">
 

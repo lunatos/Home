@@ -28,7 +28,7 @@ function ProjectSection() {
 
   return (
     <>
-      <div className="projetos-background"></div>
+      <div className="code-background"></div>
       <div className="back-color">
         <Container className="project-container">
           <Row className='justify-content-center'>
