@@ -56,6 +56,14 @@
     border-color: #333333 !important;
 }
 
+[data-theme="dark"] .accordion-body {
+    color: #c8c8c8 !important;
+}
+
+[data-theme="dark"] .accordion-button {
+    color: #e5e5e5 !important;
+}
+
 .bio-image {
     background-color: #ffffff;
 }
