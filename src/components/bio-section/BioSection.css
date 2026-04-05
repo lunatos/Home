@@ -1,35 +1,103 @@
 .bio-container {
-    background-color: #eeeeee;
+    background-color: var(--bg-primary);
     align-items: center;
-    object-fit: scale-down;
     justify-content: start;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .brain-background {
     width: 100%;
     height: 30vh;
-    background: url(/img/cerebro.png) repeat scroll center;
-    border-bottom: 2px white solid;
-    background-size: cover;
+    background: url(/img/cerebro.png) no-repeat center / cover;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.brain-background::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, var(--bg-primary));
+    pointer-events: none;
 }
 
 .main-row {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 
 .my-pic {
     width: 75%;
+    border-radius: 16px;
+    box-shadow: var(--shadow-card);
 }
 
 .bio-text {
     text-align: justify;
     padding-bottom: 10px;
     padding-top: 10px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.accordion-theme {
+    background-color: #ffffff !important;
+    border-color: #e5e5e5 !important;
+    border-radius: var(--border-radius) !important;
+    box-shadow: var(--shadow-card);
+}
+
+[data-theme="dark"] .accordion-theme {
+    background-color: #1e1e1e !important;
+    border-color: #333333 !important;
+}
+
+.bio-image {
+    background-color: #ffffff;
+}
+
+[data-theme="dark"] .bio-image {
+    background-color: transparent !important;
 }
 
 .accordion-body {
     text-align: start;
+}
+
+.accordion-item {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-color) !important;
+    border-radius: var(--border-radius) !important;
+    box-shadow: var(--shadow-card);
+}
+
+.accordion-button {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg-card) !important;
+    color: var(--accent) !important;
+}
+
+.accordion-button::after {
+    filter: invert(0);
+}
+
+[data-theme="dark"] .accordion-button::after {
+    filter: invert(1);
+}
+
+.back-color {
+    background-color: var(--bg-primary);
+}
+
+.bio-container h1 {
+    color: var(--text-primary);
 }

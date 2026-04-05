@@ -16,9 +16,9 @@ function IntroSection() {
                     <Row className="main-row">
                         <Col className="d-flex align-items-center flex-column justify-content-around" md={6} sm={12}>
                             <Row>
-                                <h1 className="fw-bold text-dark text-opacity-75">Mini Biografia</h1>
+                                <h1 className="fw-bold heading-theme">Mini Biografia</h1>
                             </Row>
-                            <Image className="my-pic shadow mb-5 bg-white" src="./img/EmpEu.jpeg" rounded fluid />
+                            <Image className="my-pic shadow mb-5 bio-image" src="./img/EmpEu.jpeg" rounded fluid />
                         </Col>
                         <Col>
                             <Row className="bio-text p-2">
@@ -32,25 +32,25 @@ function IntroSection() {
                             </Row>
                             <Row>
                                 <Accordion defaultActiveKey="0">
-                                    <Accordion.Item eventKey="0" className="shadow bg-white rounded">
+                                    <Accordion.Item eventKey="0" className="shadow accordion-theme rounded">
                                         <Accordion.Header>Linguagens de Programação</Accordion.Header>
                                         <Accordion.Body>
                                             Ao longo da minha jornada acadêmica consegui acumular algum conhecimento em algumas linguagens específicas, tais como: Java, C/C++, Python, Javascript e SQL, todas essas a nível intermediário. Já outras, apesar de ter um pouco menos de experiencia, tive um contato legal com elas, tanto dentro da faculdade ou até mesmo durante projetos de sistemas profissionais, tais como: C#, NoSQL e Dart. Se quiser ver projetos que usei alguma dessas linguagens é só ir para a aba "Projetos" nesse site.
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="1" className="shadow bg-white rounded">
+                                    <Accordion.Item eventKey="1" className="shadow accordion-theme rounded">
                                         <Accordion.Header>Frameworks</Accordion.Header>
                                         <Accordion.Body>
                                             Não só de linguagens vive um programador. Além dessas linguagens aprendi o funcionamento de alguns frameworks muito importantes, principalmente para o desenvolvimento Web, como: React, Flutter, FlutterFlow, Bootstrap. Um bom exemplo do uso disso é esse site, que foi inteiramente desenvolvido com React
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="2" className="shadow bg-white rounded">
+                                    <Accordion.Item eventKey="2" className="shadow accordion-theme rounded">
                                         <Accordion.Header>Hardware</Accordion.Header>
                                         <Accordion.Body>
                                             Além do Software, aprendi bastante sobre o funcionamento de cada componente constituinte de um computador. Não só isso, mas sei montar máquinas, identificar problemas relacionadas ao correto funcionamento do Hardware e resolve-los.
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="3" className="shadow bg-white rounded">
+                                    <Accordion.Item eventKey="3" className="shadow accordion-theme rounded">
                                         <Accordion.Header>Adicionais</Accordion.Header>
                                         <Accordion.Body>
                                             Pacote Office (Excel, Word, Power Point), HTML, CSS, Noções de estatística, e o uso de Metodologias ágeis.

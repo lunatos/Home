@@ -1,38 +1,46 @@
 .intro-container {
-    background-color: #eeeeee;
+    background-color: var(--bg-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
-    object-fit: scale-down;
     justify-content: start;
     text-align: center;
-    padding-bottom: 20px;
-    position: sticky;
+    padding-bottom: 40px;
 }
 
 .code-background {
     width: 100%;
     height: 50vh;
-    background: url(/img/codeBanner.jpg) repeat fixed center;
-    border-bottom: 2px white solid;
-    background-size: cover;
+    background: url(/img/codeBanner.jpg) no-repeat center / cover;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.code-background::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, var(--bg-primary));
+    pointer-events: none;
 }
 
 .perfil {
-    background: url(/img/PerEu.jpeg) no-repeat top;
-    background-size: cover;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    flex-direction: row;
+    background: url(/img/PerEu.jpeg) no-repeat center / cover;
+    border: 4px solid var(--bg-primary);
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     height: 25vh;
-    position: absolute;
     width: 25vh;
-    z-index: 4;
-    top: -12.5vh;
+    margin-top: -12.5vh;
+    position: relative;
+    z-index: 2;
 }
 
 .title {
-    padding-top: 12.5vh;
+    padding-top: 16px;
 }
 
 .text {
@@ -40,5 +48,39 @@
 }
 
 .back-color {
-    background-color: #eeeeee;
+    background-color: var(--bg-primary);
+}
+
+.intro-container h1 {
+    color: var(--text-primary);
+}
+
+.card-theme {
+    background-color: #ffffff;
+    color: #4a4a4a;
+}
+
+[data-theme="dark"] .card-theme {
+    background-color: #1e1e1e !important;
+    color: #c8c8c8;
+}
+
+.heading-theme {
+    color: #111827;
+}
+
+[data-theme="dark"] .heading-theme {
+    color: #e5e5e5 !important;
+}
+
+@media screen and (max-width: 576px) {
+    .perfil {
+        height: 20vh;
+        width: 20vh;
+        margin-top: -10vh;
+    }
+
+    .code-background {
+        height: 40vh;
+    }
 }

@@ -32,19 +32,19 @@ function ProjectSection() {
       <div className="back-color">
         <Container className="project-container">
           <Row className='justify-content-center'>
-            <h2 className='p-2 fw-bold text-dark'>Meus Repositorios Publicos no GitHub:</h2>
+            <h2 className='p-2 fw-bold heading-theme'>Meus Repositórios Públicos no GitHub:</h2>
             <Col sm="6" className='p-0' onMouseLeave={() => setHovered(null)}>
               {repos.map((repo, index) => (
-                <Card className="shadow p-3 bg-white rounded repo-item" onMouseEnter={() => setHovered(index)} 
+                <Card className="shadow p-3 card-theme rounded repo-item" onMouseEnter={() => setHovered(index)}
                 style={{
                     transform: hovered === index ? 'scale(1.1)' : hovered === null? 'scale(1)' : 'scale(0.9)',
                     marginBottom: hovered === index? '.5rem' : hovered === null? '.25rem' : '-.5rem'
                   }}>
                   <Row>
-                    <h3 className='fw-bold text-dark text-opacity-75'>{repo.name}</h3>
+                    <h3 className='fw-bold heading-theme-card'>{repo.name}</h3>
                   </Row>
                   <Row>
-                  <p className="text-center text-secondary bg-light rounded">{repo.description}</p>
+                  <p className="text-center description-card rounded">{repo.description}</p>
                   </Row>
                   <Row>
                     <Link
