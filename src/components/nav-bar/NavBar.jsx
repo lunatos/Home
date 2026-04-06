@@ -64,13 +64,6 @@ function NavBar() {
                             Projetos <i className="fa-solid fa-code"></i>
                         </Link>
                     </li>
-                    {!button && (
-                        <li className="nav-item">
-                            <Link to='/bio' className='nav-links-mobile' onClick={closeMobileMenu}>
-                                Explorar
-                            </Link>
-                        </li>
-                    )}
                 </ul>
             </div>
         </nav>

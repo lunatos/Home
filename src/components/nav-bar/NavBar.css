@@ -184,6 +184,12 @@
     left: 1rem;
   }
 
+  .theme-toggle {
+    position: absolute;
+    right: 3.2rem;
+    margin-left: 0;
+  }
+
   .menu-icon {
     display: flex;
     position: absolute;
